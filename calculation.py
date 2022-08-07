@@ -64,7 +64,7 @@ nrmse_skimg5 = metrics.normalized_root_mse(ref_img, img5)
 print("NRMSE: based on scikit-image Median_Filtering= ", nrmse_skimg5)
 
 
-# Here I've Added the output for First iteration
+# Here I've Added the output of the First iteration
 
 """ MSE: based on scikit-image =  2392.208961043001
 MSE: based on scikit-image Average_Filtering =  93.94648762870547
@@ -158,3 +158,32 @@ nrmse_skimg9 = metrics.normalized_root_mse(ref_img, img9)
 print("NRMSE: based on scikit-image Gaussian_Filtering= ", nrmse_skimg9)
 nrmse_skimg10 = metrics.normalized_root_mse(ref_img, img10)
 print("NRMSE: based on scikit-image Median_Filtering= ", nrmse_skimg10)
+
+# Here I've Added the output of the Second iteration
+
+"""
+ MSE: based on scikit-image =  198.4908977777417
+MSE: based on scikit-image Average_Filtering =  14.537066317881463
+MSE: based on scikit-image Bilateral_Filtering =  25.508968504732227
+MSE: based on scikit-image Gaussian_Filtering =  15.486681599145891
+MSE: based on scikit-image Median_Filtering =  12.309358558643044
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+PSNR: based on scikit-image =  25.153397648092604
+PSNR: based on scikit-image Average_Filtering=  36.50603589180272
+PSNR: based on scikit-image Bilateral_Filtering=  34.06387463283601
+PSNR: based on scikit-image Gaussian_Filtering=  36.23121991370222
+PSNR: based on scikit-image Median_Filtering=  37.228449384564904
+=======================================================
+=======================================================
+=======================================================
+=======================================================
+NRMSE: based on scikit-image =  0.1093573469492722
+NRMSE: based on scikit-image Average_Filtering=  0.029594843883289448
+NRMSE: based on scikit-image Bilateral_Filtering=  0.039203434529377024
+NRMSE: based on scikit-image Gaussian_Filtering=  0.030546176177642135
+NRMSE: based on scikit-image Median_Filtering=  0.027232993268903518
+
+ """
