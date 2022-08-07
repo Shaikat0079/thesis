@@ -89,3 +89,72 @@ NRMSE: based on scikit-image Average_Filtering=  0.07523465632016421
 NRMSE: based on scikit-image Bilateral_Filtering=  0.1632922876152887
 NRMSE: based on scikit-image Gaussian_Filtering=  0.0931937241309786
 NRMSE: based on scikit-image Median_Filtering=  0.10159843154493951 """
+
+print("=======================================================")
+print("=======================================================")
+print("=======================================================")
+print("=======================================================")
+print("2nd Iteration")
+print("=======================================================")
+print("=======================================================")
+print("=======================================================")
+print("=======================================================")
+img6 = cv2.imread("noisedesktop2.jpg")
+img7 = cv2.imread("desktop_average2.jpg")
+img8 = cv2.imread("desktop_bilateral2.jpg")
+img9 = cv2.imread("desktop_gaussian2.jpg")
+img10 = cv2.imread("desktop_median2.jpg")
+
+
+# Mean square error
+
+mse_skimg6 = metrics.mean_squared_error(ref_img, img6)
+print("MSE: based on scikit-image = ", mse_skimg6)
+mse_skimg7 = metrics.mean_squared_error(ref_img, img7)
+print("MSE: based on scikit-image Average_Filtering = ", mse_skimg7)
+mse_skimg8 = metrics.mean_squared_error(ref_img, img8)
+print("MSE: based on scikit-image Bilateral_Filtering = ", mse_skimg8)
+mse_skimg9 = metrics.mean_squared_error(ref_img, img9)
+print("MSE: based on scikit-image Gaussian_Filtering = ", mse_skimg9)
+mse_skimg10 = metrics.mean_squared_error(ref_img, img10)
+print("MSE: based on scikit-image Median_Filtering = ", mse_skimg10)
+# mse_skimg6 = metrics.mean_squared_error(ref_img, ref_img)
+# print("MSE: based on scikit-image No_Filtering = ", mse_skimg6)
+
+
+print('=======================================================')
+print('=======================================================')
+print('=======================================================')
+print('=======================================================')
+
+# Peak Signal Noise Ratio
+
+psnr_skimg6 = metrics.peak_signal_noise_ratio(ref_img, img6)
+print("PSNR: based on scikit-image = ", psnr_skimg6)
+psnr_skimg7 = metrics.peak_signal_noise_ratio(ref_img, img7)
+print("PSNR: based on scikit-image Average_Filtering= ", psnr_skimg7)
+psnr_skimg8 = metrics.peak_signal_noise_ratio(ref_img, img8)
+print("PSNR: based on scikit-image Bilateral_Filtering= ", psnr_skimg8)
+psnr_skimg9 = metrics.peak_signal_noise_ratio(ref_img, img9)
+print("PSNR: based on scikit-image Gaussian_Filtering= ", psnr_skimg9)
+psnr_skimg10 = metrics.peak_signal_noise_ratio(ref_img, img10)
+print("PSNR: based on scikit-image Median_Filtering= ", psnr_skimg10)
+
+
+print('=======================================================')
+print('=======================================================')
+print('=======================================================')
+print('=======================================================')
+
+# Normalized Root Mean Square Error
+
+nrmse_skimg6 = metrics.normalized_root_mse(ref_img, img6)
+print("NRMSE: based on scikit-image = ", nrmse_skimg6)
+nrmse_skimg7 = metrics.normalized_root_mse(ref_img, img7)
+print("NRMSE: based on scikit-image Average_Filtering= ", nrmse_skimg7)
+nrmse_skimg8 = metrics.normalized_root_mse(ref_img, img8)
+print("NRMSE: based on scikit-image Bilateral_Filtering= ", nrmse_skimg8)
+nrmse_skimg9 = metrics.normalized_root_mse(ref_img, img9)
+print("NRMSE: based on scikit-image Gaussian_Filtering= ", nrmse_skimg9)
+nrmse_skimg10 = metrics.normalized_root_mse(ref_img, img10)
+print("NRMSE: based on scikit-image Median_Filtering= ", nrmse_skimg10)
