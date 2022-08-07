@@ -41,3 +41,21 @@ gaussian = cv2.GaussianBlur(img, (5, 5), 0)
 cv2.imwrite('desktop_gaussian.jpg', gaussian)
 median_filter = cv2.medianBlur(img, 5)
 cv2.imwrite('desktop_median.jpg', median_filter)
+
+
+img2 = cv2.imread('noiseDesktop2.jpg')
+
+# Apply bilateral filter with d = 15,
+sigmaColor = sigmaSpace = 75.
+bilateral = cv2.bilateralFilter(img2, 15, 75, 75)
+# Save the output.
+cv2.imwrite('desktop_bilateral2.jpg', bilateral)
+# Apply Average filter
+average = cv2.blur(img2, (5, 5))
+# Save the output.
+cv2.imwrite('desktop_average2.jpg', average)
+# Apply Gaussian Filter
+gaussian = cv2.GaussianBlur(img2, (5, 5), 0)
+cv2.imwrite('desktop_gaussian2.jpg', gaussian)
+median_filter = cv2.medianBlur(img2, 5)
+cv2.imwrite('desktop_median2.jpg', median_filter)
