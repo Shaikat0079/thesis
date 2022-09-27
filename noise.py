@@ -34,7 +34,7 @@ bilateral = cv2.bilateralFilter(img, 15, 75, 75)
 cv2.imwrite('desktop_bilateral.jpg', bilateral)
 # Apply Average filter
 average = cv2.blur(img, (5, 5))
-# Save the output.
+# Save the output
 cv2.imwrite('desktop_average.jpg', average)
 # Apply Gaussian Filter
 gaussian = cv2.GaussianBlur(img, (5, 5), 0)
