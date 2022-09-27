@@ -39,6 +39,7 @@ cv2.imwrite('desktop_average.jpg', average)
 # Apply Gaussian Filter
 gaussian = cv2.GaussianBlur(img, (5, 5), 0)
 cv2.imwrite('desktop_gaussian.jpg', gaussian)
+# Apply Median Filter
 median_filter = cv2.medianBlur(img, 5)
 cv2.imwrite('desktop_median.jpg', median_filter)
 
@@ -57,5 +58,6 @@ cv2.imwrite('desktop_average2.jpg', average)
 # Apply Gaussian Filter
 gaussian = cv2.GaussianBlur(img2, (5, 5), 0)
 cv2.imwrite('desktop_gaussian2.jpg', gaussian)
+# Apply Median Filter
 median_filter = cv2.medianBlur(img2, 5)
 cv2.imwrite('desktop_median2.jpg', median_filter)
